@@ -1,3 +1,5 @@
+const readlineSync = require('readline-sync');
+
 //solving quadratic eqation
 const solveQuadraticEquation = (a, b, c) => {
     const discriminant = b * b - 4 * a * c;
@@ -13,4 +15,19 @@ const solveQuadraticEquation = (a, b, c) => {
     } else {
         return []
     }
+}
+
+//input values function
+const askUser = (questionPrompt) => readlineSync.question(questionPrompt)
+
+//interactive mode
+const startInteractiveMode = () => {
+    const questions = ['a = ', 'b = ', 'c = '];
+    const answers = questions.map(element => askUser(element));
+
+    return solveQuadraticEquation(...answers);
+}
+
+if (process.argv.length == 2) {
+    startInteractiveMode()
 }
