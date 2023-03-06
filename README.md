@@ -27,4 +27,4 @@ node main.js
 node main.js <path_to_file>
 ```
 
-[Reverted commit](https://www.youtube.com/watch?v=q1NjNA1GWBs&ab_channel=NEKUPLINOFF)
+[Reverted commit]()
