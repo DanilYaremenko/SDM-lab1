@@ -11,11 +11,11 @@ const solveQuadraticEquation = (a, b, c) => {
     console.log(`Equation is: (${a}) x^2 + (${b}) x + (${c}) = 0`);
 
     if (discriminant > 0) {
-        const x1 = (-b + discriminantRoot) / (2 * a);
-        const x2 = (-b - discriminantRoot) / (2 * a);
+        const x1 = ((-b + discriminantRoot) / (2 * a)).toFixed(1);
+        const x2 = ((-b - discriminantRoot) / (2 * a)).toFixed(1);
         result = [x1, x2];
     } else if (discriminant === 0) {
-        const x1 = (-b + discriminantRoot) / (2 * a);
+        const x1 = ((-b + discriminantRoot) / (2 * a)).toFixed(1);
         result = [x1];
     } else {
         result = [];
