@@ -27,4 +27,4 @@ node main.js
 node main.js <path_to_file>
 ```
 
-[Reverted commit]()
+[Reverted commit](https://github.com/DanilYaremenko/SDM-lab1/commit/d43a5c882d4f1d001b0a23edbcf7dcf999f85147)
